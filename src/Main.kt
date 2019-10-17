@@ -1,10 +1,8 @@
-class Main {
 
-    fun main() {
+fun main() {
 
-        var catraca = Catraca()
+    var catraca = Catraca()
 
-        println(catraca.action())
+    println(catraca.action())
 
-    }
 }

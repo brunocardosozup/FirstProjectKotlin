@@ -1,50 +1,97 @@
 import java.util.*
+import java.util.Scanner
 
 class Catraca {
+
+
     fun action() {
 
-        var veiculo = Veiculo("", "")
-
-        println("Seja bem-vindo a alocação da zup!!!")
-
-        val input = Scanner(System.`in`)
-
-        var escolha = null
-        while (escolha == null) {
-
-            println(
-                "Se o digito for 1 ira criar um veiculo:\n" +
-                        "Se o digito for 2 remover um veiculo:\n" +
-                        "Se o digito for 3 buscar o veiculo por id( PLACA ):\n" +
-                        "Se o digito for 4 alugar um veiculo:\n"
+        var veiculoT = Veiculo("", "")
+        var listaDeVeiculos = hashMapOf(veiculoT.placa to veiculoT.veiculo) /*Passando os dados do veiculo para um Map, para que eu consiga buscar por
+        ID ou seja a placa.
+        */
+//        listaDeVeiculos.to(listOf<Veiculo>())
+        val scan = Scanner(System.`in`)
 
 
-            )
+        println(
+            "Seja bem-vindo a alocação da zup!!!\n" +
+                    "Digite 0 para entrar"
+        )
 
 
+        var verificador: Int = 1
 
-            // Código a ser executado
-            val escolha = input.nextInt()
-            if (escolha == 1) {
-                println(" Digite a placa:")
-                var placa = input.nextLine()
-                println(" Digite o veiculo:")
-                var veiculo = input.nextLine()
 
-            } else if (escolha == 2) {
-                println("Digite a placa do veiculo que deseja remover:")
-                veiculo.listaDeVeiculos.remove("123")
-                var opcao = input.nextLine()
-                // tenho que passar para função o nome da chave
+        var controle: Int = scan.nextInt()
 
-            } else if (escolha == 3) {
-                println("Digite a placa do veiculo que deseja buscar:")
-                veiculo.listaDeVeiculos.containsKey(input.nextLine())
-            } else {
-                println("Desculpe mas não existe veiculo neste local com estes dados!!!")
+        if (controle == 0) {
+            var scanif = Scanner(System.`in`)
+            var verificador2 = 1
+
+            while (verificador2 == 1) {
+                var scanFirstOp = Scanner(System.`in`)
+
+                println(
+                    "1 -> Criar veiculo\n" +
+                            "2 -> Remover veiculo\n" +
+                            "3 -> Atualizar veiculo\n" +
+                            "4 -> Buscar veiculo (ID)\n" +
+                            "5 -> Tamanho da lista\n"
+                )
+
+                var resposta: Int = scanFirstOp.nextInt()
+
+                if (resposta == 1) {
+                    println("Digite a placa do veiculo:")
+                    var placa = scanif.nextLine()
+
+                    println("Digite o veiculo:")
+                    var veiculoResposta = scanif.nextLine()
+
+                    var veiculo = Veiculo(placa, veiculoResposta)
+
+                    listaDeVeiculos.put(placa, veiculoResposta)
+
+                } else if (resposta == 2) {
+
+                    val scan2 = Scanner(System.`in`)
+                    println("Digite a placa do veiculo que deseja remover")
+                    var remove: String = scan2.nextLine()
+                    listaDeVeiculos.remove(veiculoT.placa, veiculoT.veiculo)
+
+
+                } else if (resposta == 3) {
+                    println("Digite a placa do veiculo que deseja buscar")
+
+                } else if (resposta == 5) {
+                    println("O tamanho do map é " + listaDeVeiculos.size)
+
+                }
+
+
             }
+
+
         }
 
 
     }
+
+    var veiculo = Veiculo("", "")
+
+    fun excluirVeiculo() {
+        veiculo.listaDeVeiculos.forEach {
+            print(it.key)
+            print(it.value)
+        }
+
+    }
+
+
+    fun buscarVeiculo(placa: String, listaDeVeiculo: Veiculo) {
+
+
+    }
+
 }
