@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24351159-99d6-4ee6-a3dc-321d28f2e770" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/VeiculoModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppEstacionamento/Catraca.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AppEstacionamento/Catraca.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Catraca.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Catraca.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppEstacionamento/Catraca.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppEstacionamento/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AppEstacionamento/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppEstacionamento/Veiculo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Catraca.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/VeiculoService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Veiculo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veiculo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Veiculo.kt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -1,7 +1,6 @@
-
 fun main() {
 
-    var catraca = Catraca()
+    var catraca = VeiculoController()
 
     println(catraca.action())
 
