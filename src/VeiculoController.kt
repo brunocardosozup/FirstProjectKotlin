@@ -76,12 +76,16 @@ class VeiculoController {
                     var buscar: String = scan3.nextLine()
 
                     veiculocon.buscarVeiculo(buscar)
-                    println(buscar)
+                    println(veiculocon.listaDeVeiculo)
 
                 } else if (resposta == 4) {
+
+                    //Tamanho do lista de veiculos
                     println(veiculocon.listaDeVeiculo.size)
 
                 } else if (resposta == 5) {
+
+                    //Visualiar todos veiculos cadastrados
                     println(veiculocon.listaDeVeiculo)
                 }
 

@@ -15,8 +15,7 @@ class VeiculoService {
     fun buscarVeiculo(placa: String) {
 
         println(listaDeVeiculo[placa])
-        //Buscar veiculo pela placa.
-
+        //Buscar veiculo pela placa
     }
 
     fun qtdDeItensNaLista() {
